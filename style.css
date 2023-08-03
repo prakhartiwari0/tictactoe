@@ -1,0 +1,85 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color:rgb(255, 255, 255);
+    --bg-contrast-color:rgb(16, 16, 16);
+    
+    --onHover-bg-color:rgba(0, 0, 0, 0.07);
+}
+
+.darkMode{
+    --bg-color:rgb(16, 16, 16);
+    --bg-contrast-color:rgb(255, 255, 255);
+    
+    --onHover-bg-color:rgba(255, 255, 255, 0.07);
+
+}
+body{
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+
+    background-color: var(--bg-color);
+}
+
+
+
+.gameBoxDiv{
+    /* border: 2px solid black; */
+    display: grid;
+    width: 20rem;
+    height:20rem;
+    
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+
+
+
+.gameInputDiv{
+    
+    user-select: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+
+    /* border: 2px solid black; */
+    cursor: pointer;
+}
+
+.gameBoxDiv .row1{
+    border-bottom: 1px solid var(--bg-contrast-color);
+}
+.gameBoxDiv .row2{
+    border-bottom: 1px solid var(--bg-contrast-color);
+}
+.gameBoxDiv .col1{
+    border-right: 1px solid var(--bg-contrast-color);
+}
+.gameBoxDiv .col2{  
+    border-right: 1px solid var(--bg-contrast-color);
+}
+
+.gameInputDiv .cross{
+    color: rgb(31, 97, 126);
+}
+.gameInputDiv .circle{
+    color: rgb(217, 195, 33);
+}
+
+.gameInputDiv:hover{
+    background-color: var(--onHover-bg-color);
+}
