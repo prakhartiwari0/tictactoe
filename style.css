@@ -11,6 +11,8 @@
     --bg-contrast-color:rgb(16, 16, 16);
     
     --onHover-bg-color:rgba(0, 0, 0, 0.07);
+
+    /* --fg-color */
 }
 
 .darkMode{
@@ -29,6 +31,7 @@ body{
     align-items: center ;
 
     background-color: var(--bg-color);
+    color: var(--bg-contrast-color);
 }
 
 
